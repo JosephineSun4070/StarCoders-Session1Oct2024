@@ -1,0 +1,19 @@
+.center-text {
+    text-align: center;
+}
+
+#demoForm {
+    border: 1px solid lightgrey;
+    padding: 10px;
+    width: 33%;
+    margin: auto;
+}
+
+.formField {
+    width: 100%;
+    margin: 20px 0px;
+}
+.formField input, .formField label {
+    width: 40%;
+    display: inline-block;
+}

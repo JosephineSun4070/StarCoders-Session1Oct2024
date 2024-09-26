@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Registration Form</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+    <div class="center-text">
+        <h3>Registration Form</h3>
+
+        <form id="demoForm" onsubmit="subForm(event);">
+
+            <div class="formField">
+                <label for="userFirstName">First Name*: </label>
+                <input id="userFirstName" name="userFirstName" type="text"/>
+            </div>
+
+            <div class="formField">
+                <label for="userLastName">Last Name*: </label>
+                <input id="userLastName" name="userLastName" type="text" />
+            </div>
+
+            <div class="formField">
+                <label for="userEmail">Email Address*: </label>
+                <input id="userEmail" name="userEmail" type="email" />
+            </div>
+
+            <div class="formField">
+                <label for="userPhone">Phone Number: </label>
+                <input id="userPhone" name="userPhone" type="phone" />
+            </div>
+
+           <input type="submit">
+           <input type="reset">
+        </form>
+
+    </div>
+
+</body>
+<script type="text/javascript" src="script.js"></script>
+</html> 
