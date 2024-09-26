@@ -1,0 +1,40 @@
+<head>
+    <title>Bird Photo Carousel</title>
+</head>
+
+<style>
+    #carouselPhoto {
+        width: 250px;
+        height: 200px;
+    }
+</style>
+
+<body>
+    <img id="carouselPhoto"
+        src=https://images.unsplash.com/photo-1550853024-fae8cd4be47f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60
+        crossorigin="anonymous" />
+    <button onClick="changePhoto()">Change Photo</button>
+</body>
+
+
+
+<script>
+    var images = [
+        "https://images.unsplash.com/photo-1550853024-fae8cd4be47f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+        "https://celebrateurbanbirds.org/wp-content/uploads/2016/05/carolina-wren-1024x707.jpg",
+        "https://www.birds.cornell.edu/home/wp-content/uploads/2019/05/IBunting-Kinderman-58737651-FI.gif"
+    ];
+
+    // index of the image currently displayed
+    var imgIndex = 1;
+    function changePhoto() {
+        if (imgIndex === images.length) {
+            imgIndex = 1;
+        } else {
+            imgIndex = imgIndex + 1;
+        }
+
+        document.getElementById("carouselPhoto").src = images[imgIndex];
+    }
+
+</script>
