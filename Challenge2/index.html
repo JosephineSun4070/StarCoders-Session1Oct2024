@@ -2,56 +2,33 @@
 <html>
 
 <head>
-
-  <title>Company</title>
-
+  <meta charset="utf-8">
+  <title>Weekly Planning</title>
 </head>
-<style type="text/css">
-  body {
-    margin: 0px;
-  }
-
-  #header {
-    width: 100%;
-    height: 125px;
-    background-color: black;
-    color: pink;
-  }
-
-  #companyName {
-    font-size: 6rem;
-    padding-left: 10px;
-  }
-
-  .left {
-    float: left;
-  }
-
-  .right {
-    float: right;
-    text-align: center;
-  }
-
-  a {
-    color: white;
-    font-size: 2rem;
-    margin-right: 20px;
-  }
+<link rel="stylesheet" type="text/css" href="style.css">
 </style>
 
 <body>
 
-  <div id="header">
 
-    <span id="companyName" class="left">Company</span>
-
-    <div class="right">
-      <a href="http://www.dtcc.com/">About Us</a>
-    </div>
-
+  <div id="dayNavigator">
+    <div class="dayHeading" onclick="changePhoto(0)">Monday</div>
+    <div class="dayHeading" onclick="changePhoto(1)">Tuesday</div>
+    <div class="dayHeading" onclick="changePhoto(2)">Wednesday</div>
+    <div class="dayHeading" onclick="changePhoto(3)">Thursday</div>
+    <div class="dayHeading" onclick="changePhoto(4)">Friday</div>
   </div>
 
+  <img class="active dailyPhoto"
+    src="https://cdn.cliqueinc.com/posts/263397/business-casual-outfits-for-summer-263397-1531966198175-image.700x0c.jpg" />
+  <img class="dailyPhoto" src="https://stylishlyme.com/wp-content/uploads/2017/12/business-attire-women.jpg" />
+  <img class="dailyPhoto"
+    src="https://thediaryofadebutante.com/wp-content/uploads/2017/07/Banana-Republic-Black-Scalloped-Pants-1.jpg" />
+  <img class="dailyPhoto"
+    src="https://media1.popsugar-assets.com/files/thumbor/sJl0vg1zsd7Qx9QsZ44Uov7D1xI=/fit-in/1560x2392/filters:format_auto():extract_cover():upscale()/2022/05/09/934/n/1922564/2a6fb3389b7097f2_netimgrPhtxu.webp" />
+  <img class="dailyPhoto" src="https://s2.r29static.com/bin/shop/ff9/x,80/2211905/image.jpg" />
 
 </body>
+<script type="text/javascript" src="script.js"></script>
 
 </html>
