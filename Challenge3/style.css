@@ -9,6 +9,9 @@
     color: darksalmon;
     font-family: Georgia;
     font-size: 3rem;
+    cursor: pointer;
+    margin-top: 12px;
+    margin-bottom: 12px;
 }
 
 .dailyPhoto {
