@@ -12,25 +12,23 @@
     margin: 0px;
   }
 
-  #header {
-    width: 100%;
-    height: 125px;
-    background-color: black;
-    color: pink;
-  }
-
   #companyName {
     font-size: 6rem;
     padding-left: 10px;
   }
 
-  .left {
-    float: left;
+  #header {
+    width: 100%;
+    height: 125px;
+    background-color: black;
+    color: pink;
+    display: flex;
+    justify-content: space-between;
   }
 
-  .right {
-    float: right;
-    text-align: center;
+  #links {
+    display: flex;
+    flex-direction: column;
   }
 
   a {
@@ -46,7 +44,7 @@
 
     <span id="companyName" class="left">Company</span>
 
-    <div class="right">
+    <div id="links">
       <a href="http://www.example.com/">About Us</a>
     </div>
 
